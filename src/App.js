@@ -1,25 +1,58 @@
-import logo from './logo.svg';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './App.css';
+import Products from './products';
+import Department from './department';
+import Product from './product';
+import Navbar from './nav';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div class="body">
+        <Navbar />
+        <Switch>
+          <Route path="/products">
+            <Products />
+          </Route>
+          <Route path="/product/:id">
+            <Product />
+          </Route>
+          <Route path="/department/:id">
+            <Department />
+          </Route>
+          <Route path="/services">
+            <About />
+          </Route>
+          <Route path="/case-studies">
+            <About />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact-us">
+            <Users />
+          </Route>
+        </Switch>
+      </div>
+      <div className='footer'></div>
+    </Router>
   );
 }
 
-export default App;
+
+function About() {
+  return <h2>About</h2>;
+}
+
+function Users() {
+  return <h2>Users</h2>;
+}

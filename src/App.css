@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+
+.nav {
+  background-color: steelblue;
+  color: white;
+  font-weight: 600;
+}
+
+.nav li {
+  list-style-type: none;
+  padding: 0.5rem 0.75rem;
+  color: white;
+}
+
+
+.nav a {
+  text-decoration: none;
+  color: white;
+
+}
+
+
+.nav ul {
+  display: flex;
+}
+
+.footer {
+  min-height: 200px;
+  background-color: steelblue;
+  color: white;
+}
+
+.body {
+  min-height: calc(100vh - 200px);
+}
