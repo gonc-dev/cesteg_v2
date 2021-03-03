@@ -1,0 +1,22 @@
+.card {
+    margin: 2rem;
+    padding: 1rem;
+    width: 300px;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.deck {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.deck .card-body {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
