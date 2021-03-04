@@ -3,18 +3,24 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import './App.css';
 import Products from './products';
 import Department from './department';
 import Product from './product';
+import Services from './services';
+import Service from './service';
+import News from './news';
+import Article from './article';
+import About from './about';
 import Navbar from './nav';
+import ContactPage from './contact';
+import CaseStudies from './case_studies';
 
 export default function App() {
   return (
     <Router>
-      <div class="body">
+      <div className="body">
         <Navbar />
         <Switch>
           <Route path="/products">
@@ -27,32 +33,29 @@ export default function App() {
             <Department />
           </Route>
           <Route path="/services">
-            <About />
+            <Services />
+          </Route>
+          <Route path="/service/:id">
+            <Service />
+          </Route>
+          <Route path="/news">
+            <News />
+          </Route>
+          <Route path="/article/:id">
+            <Article />
           </Route>
           <Route path="/case-studies">
-            <About />
-          </Route>
-          <Route path="/about">
-            <About />
+            <CaseStudies />
           </Route>
           <Route path="/about">
             <About />
           </Route>
           <Route path="/contact-us">
-            <Users />
+            <ContactPage />
           </Route>
         </Switch>
       </div>
       <div className='footer'></div>
     </Router>
   );
-}
-
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }

@@ -21,7 +21,7 @@ const Department = (props) => {
                         setRich(html)
                     })
             })
-    }, [])
+    }, [id])
     
 
     return(

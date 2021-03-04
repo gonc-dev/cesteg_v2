@@ -1,10 +1,25 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {useState} from 'react'
 
 const Navbar = (props) => {
+    const [navActive, setNavActive] = useState(false)
+    console.log(window.screen.width)
+    
     return (
-    <nav className="nav">
-          <ul>
+    <React.Fragment>
+    <div className="mobile-nav">
+      <div>
+        CESTEG
+      </div>
+      <div onClick={() => {
+        setNavActive(!navActive)
+      }}>
+        <i className="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </div>
+    <nav className={navActive ? "nav active" : "nav"}>
+          <ul onClick={() => setNavActive(false)}>
             <li>
               <Link to="/products">Products</Link>
             </li>
@@ -21,10 +36,12 @@ const Navbar = (props) => {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/users">Contact Us</Link>
+              <Link to="/contact-us">Contact Us</Link>
             </li>
           </ul>
-        </nav>)
+        </nav>
+    </React.Fragment>
+  )
 }
 
 export default Navbar

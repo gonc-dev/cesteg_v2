@@ -1,0 +1,39 @@
+.featured {
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+    margin-bottom: 100px
+}
+
+.featured > img {
+    width: 100%;
+    height: auto;
+} 
+
+.featured-card {
+    background-color: white;
+    position: absolute;
+    width: 300px;
+    padding: 20px;
+    height: 200px;
+    left: calc(50vw - 150px);
+    bottom: 0px;
+    z-index: 100;
+}
+
+.article-img {
+    width: 100%;
+    height: auto;
+}
+
+.article-title {
+    font-size: 4rem;
+    font-family:  serif;
+    margin-bottom: 2rem;
+}
+
+.article-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family:  serif;
+}
