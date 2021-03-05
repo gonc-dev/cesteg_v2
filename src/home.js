@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import {useEffect} from 'react'
 import AOS from 'aos'
+import LatestPosts from './latest_posts'
 
 const Home = (props) => {
     useEffect(() =>{
@@ -19,8 +20,8 @@ const Home = (props) => {
                     <img src="/images/logo-transparent.png" width="100%"/>
                 </div>
                 <div className="col-md-6 text-center" data-aos="fade-left" data-aos-duration="2000">
-                <h1 className="logo-header text-center">Welcome to CESTEG Engineering</h1>
-                    <h3 className="text-center">CESTEG Engineering is a mechanical, Automation & Electrical Engineering Company and a provider of innovative approaches to construction and other related engineering services throughout the country of Southern Africa</h3>
+                <h2 className="logo-header text-center">Welcome to CESTEG Engineering</h2>
+                    <h4 className="text-center">CESTEG Engineering is a mechanical, Automation & Electrical Engineering Company and a provider of innovative approaches to construction and other related engineering services throughout the country of Southern Africa</h4>
                 </div>
             </div>    
         </section>
@@ -42,7 +43,7 @@ const Home = (props) => {
         <section id="posts">
             <div className="post">
                 <h2>RECENT POSTS</h2>
-
+                <LatestPosts />
             </div>
         </section>
         </div>        

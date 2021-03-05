@@ -3,7 +3,7 @@ import client from './client'
 import './styles/news.css'
 import {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
-
+import LatestPosts from './latest_posts'
 
 const Featured = (props) => {
     return(
@@ -18,27 +18,14 @@ const Featured = (props) => {
     )
 }
 
-const ArticleCard = (props) => {
-    console.log(props.article)
-    return (
-    <div className='card'>
-        <img src={props.article.image.fields.file.url} />
-        <div className='card-body'>
-            <h4><Link to={"/article/" + props.articleID}>{props.article.title}</Link></h4>
-            <p> <i className="fas fa-user    "></i> {props.article.author}</p>
-            <p> <i className="fas fa-clock-o    "></i> {props.article.created}</p>
-        </div>
-    </div>)
-}
 
 const News = (props) => {
     const [articles, setArticles] = useState([])
     useEffect(() => {
         client.getEntries({
             content_type: 'post',
-            limit: 3
+            limit: 1
         }).then(res =>{
-            console.log(res.items)
             setArticles(res.items)
         });
 
@@ -52,10 +39,8 @@ const News = (props) => {
                    </div>
                </div>
                <div className='row'>
-                   <div className='col-md-8 col-sm-12 deck'>
-                       {articles.map(article => (<ArticleCard 
-                            article={article.fields}
-                            articleID={article.sys.id}/>))}
+                   <div className='col-md-8 col-sm-12'>
+                      <LatestPosts />
                    </div>
                    <div className='col-md-4 col-sm-12'>
                        <h3>Cesteg News.</h3>
