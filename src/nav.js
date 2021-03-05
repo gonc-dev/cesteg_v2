@@ -20,6 +20,9 @@ const Navbar = (props) => {
     </div>
     <nav className={navActive ? "nav active" : "nav"}>
           <ul onClick={() => setNavActive(false)}>
+          <li>
+              <Link to="/"><img src="/images/logo-transparent.png" width="100"/></Link>
+            </li>
             <li>
               <Link to="/products">Products</Link>
             </li>
