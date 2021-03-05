@@ -16,7 +16,7 @@ const Home = (props) => {
         <section id="hero">
             <div className="row jumbotron">
                 <div className="col-md-6 text-center" data-aos="fade-right" data-aos-duration="2000" >
-                    <img src="/images/logo.jpg" width="100%"/>
+                    <img src="/images/logo-transparent.png" width="100%"/>
                 </div>
                 <div className="col-md-6 text-center" data-aos="fade-left" data-aos-duration="2000">
                 <h1 className="logo-header text-center">Welcome to CESTEG Engineering</h1>

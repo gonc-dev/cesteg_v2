@@ -18,10 +18,10 @@ const Navbar = (props) => {
         <i className="fa fa-bars" aria-hidden="true"></i>
       </div>
     </div>
-    <nav className={navActive ? "nav active" : "nav"}>
+    <nav className={navActive ? "nav active bg-light" : "nav"}>
           <ul onClick={() => setNavActive(false)}>
           <li>
-              <Link to="/"><img src="/images/logo-transparent.png" width="100"/></Link>
+              <Link to="/"><img src="/images/logo-transparent.png" width="80"/></Link>
             </li>
             <li>
               <Link to="/products">Products</Link>
