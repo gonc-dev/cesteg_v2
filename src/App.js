@@ -14,6 +14,7 @@ import News from './news';
 import Article from './article';
 import About from './about';
 import Navbar from './nav';
+import Home from './home';
 import ContactPage from './contact';
 import CaseStudies from './case_studies';
 
@@ -52,6 +53,9 @@ export default function App() {
           </Route>
           <Route path="/contact-us">
             <ContactPage />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </div>
