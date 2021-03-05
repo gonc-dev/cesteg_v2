@@ -70,6 +70,8 @@
   font-size: 1.2rem;
   padding: 18px;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -82,6 +84,7 @@
 
 .nav ul {
   display: flex;
+  margin-bottom: 0px;
 }
 
 @media (max-width: 575px) {
@@ -133,4 +136,28 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.row a{
+  color: #000;
+}
+
+.bg-foot {
+  background-color: #063340;
+  padding: 0px;
+  color: #fff;
+}
+
+.social-icon {
+  margin: 20px 10px;
+  color: #fff;
+}
+
+#links {
+  padding: 50px;
+  background-color: #475E66;
+}
+
+#links a {
+  color: #fff;
 }

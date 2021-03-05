@@ -59,7 +59,45 @@ export default function App() {
           </Route>
         </Switch>
       </div>
-      <div className='footer'></div>
+      <div className='footer'>
+      <section id="links">
+        <div class="container">
+            <div class="row m-auto">
+                <div class="col-md-4">
+                    <div class="row">
+                        <a href="/products">Products</a>
+                    </div>
+                    <div class="row">
+                        <a href="/services">Services</a>
+                    </div>
+                    <div class="row">
+                        <a href="/news">News</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <a href="/case-studies">Case Studies</a>
+                    </div>
+                    <div class="row">
+                        <a href="/about">About</a>
+                    </div>
+                    <div class="row">
+                        <a href="/contact-us">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center bg-foot" id="footer">
+        <div class="container-fluid">
+        <a href="www.google.com"><i class="social-icon fab fa-facebook-f"></i></a>
+            <a href=""><i class="social-icon fab fa-twitter"></i></a>
+            <a href=""><i class="social-icon fab fa-instagram"></i></a>
+            <a href=""><i class="social-icon fas fa-envelope"></i></a>
+            <p>CESTEG ENGINEERING © 2021.</p>
+        </div>
+    </footer>
+      </div>
     </Router>
   );
 }

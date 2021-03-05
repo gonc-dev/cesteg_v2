@@ -8,7 +8,7 @@ const Home = (props) => {
         AOS.init()
     }, [])
     return (
-    <div className="mt-5">
+    <div className="main-div">
         <div className="parallax">
 
         </div>
@@ -28,13 +28,13 @@ const Home = (props) => {
         <section id="lorem">
             <div className="row">
                 <div className="col-md-6">
-                    <h4 data-aos="fade-right" data-aos-duration="2000">Who are We?</h4>
-                    <p data-aos="fade-right" data-aos-duration="2000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin, tellus dictum convallis egestas, lectus lorem imperdiet enim, in tristique ligula odio sit amet augue. Phasellus id ex nec purus sodales congue in vel turpis.
+                    <h4 data-aos="fade-up" data-aos-duration="2000">Who are We?</h4>
+                    <p data-aos="fade-up" data-aos-duration="3000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin, tellus dictum convallis egestas, lectus lorem imperdiet enim, in tristique ligula odio sit amet augue. Phasellus id ex nec purus sodales congue in vel turpis.
                         Maecenas non feugiat orci. In pellentesque hendrerit urna quis efficitur. Curabitur quis ligula mi. Morbi in venenatis lorem, a laoreet tellus. Nullam nibh tortor, sodales eget nibh at, ultrices eleifend purus. Praesent malesuada
                         augue id est pharetra tincidunt. Nunc congue aliquam sem id bibendum. Etiam et lacus laoreet, interdum urna sed, imperdiet quam.</p>
                 </div>
                 <div className="col-md-6">
-                    <img src="ngezi.jpeg" alt="" width="100%" data-aos="fade-left" data-aos-duration="2000"/>
+                    <img src="/images/carousel-construction.jpg" alt="" width="100%" data-aos="fade-left" data-aos-duration="2000"/>
                 </div>
             </div>
         </section>
