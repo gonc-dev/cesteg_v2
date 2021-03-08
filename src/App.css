@@ -161,3 +161,30 @@
 #links a {
   color: #fff;
 }
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.partners div {
+  margin: 24px;
+  width: 192px;
+  border: 0px;
+}
+
+.partners img{
+  width: 100%;
+  height: auto;
+}
