@@ -10,7 +10,7 @@ const Navbar = (props) => {
     <React.Fragment>
     <div className="mobile-nav">
       <div>
-        CESTEG
+              <Link to="/"><img src="/images/logo-transparent.png" width="80"/></Link>
       </div>
       <div onClick={() => {
         setNavActive(!navActive)
