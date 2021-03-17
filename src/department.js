@@ -16,6 +16,7 @@ const Department = (props) => {
         client.getEntry(id)
             .then(res => {
                 setItem(res.fields)
+                console.log(res.fields)
                 richTextFromMarkdown(res.fields.description)
                     .then(html => {
                         setRich(html)
@@ -39,7 +40,7 @@ const Department = (props) => {
                             <div className='deck'>
                                 {item.products == undefined 
                                     ? null
-                                    : item.products.slice(0,2).map(prod => {
+                                    : item.products.map(prod => {
                                         return (<ProductCard fields={prod.fields} id={prod.sys.id} />)
                                     })}
                             </div>

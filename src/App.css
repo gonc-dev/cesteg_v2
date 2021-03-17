@@ -138,7 +138,7 @@
   background-size: cover;
 }
 
-.row a{
+.service-container a{
   color: #000;
 }
 
@@ -187,4 +187,12 @@
 .partners img{
   width: 100%;
   height: auto;
+}
+
+.list-group a {
+  color: #475e66;
+}
+
+.carousel .slide{
+  background-color: white!important;
 }

@@ -47,6 +47,7 @@ const Product = (props) => {
                                 <div className="col-12">
                                     <h4>Description</h4>
                                     <p>{item.description}</p>
+                                    <h4>{item.unitPrice}</h4>
                                 </div>
                             </div>
                         </div>}

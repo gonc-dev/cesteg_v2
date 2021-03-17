@@ -19,10 +19,10 @@ const ServiceList = (props) => {
     return (
             <div className="container">
                 <div className="row">
-                    <div className="col-12">
+                    <div className="col-12 service-container">
                         {categories.map(cat => (
                             <Link to={'/service/' + cat.sys.id}>
-                                <div className='service-card row shadow-card zoom'>
+                                <div className='row shadow-card zoom'>
                                     <div className="col-md-3 col-sm-12">
                                         <img src={cat.fields.icon.fields.file.url} />    
                                     </div>  

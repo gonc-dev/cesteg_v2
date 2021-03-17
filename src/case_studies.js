@@ -22,16 +22,20 @@ const CaseStudies = (props) => {
                     setContent(contentList[index])
                 }}>
                 <div>
-                    <img src="logo192.png" />
+                    <img src="images/Case_Study_1.jpeg" />
                     <p className="legend">Legend 1</p>
                     <p>Some sort of case study</p>
                 </div>
                 <div>
-                    <img src="logo192.png" />
+                    <img src="images/pipe.jpg" />
                     <p className="legend">Legend 2</p>
                 </div>
                 <div>
-                    <img src="logo512.png" />
+                    <img src="images/ngezi.jpeg" />
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <img src="images/ht-cable.jpg" />
                     <p className="legend">Legend 3</p>
                 </div>
             </Carousel>

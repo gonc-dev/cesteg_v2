@@ -33,6 +33,8 @@ const Products = (props) => {
             {featured.map(product => (
                 <ProductCard fields={product.fields} id={product.sys.id} />
             ))}
+            <button className="btn btn-primary m-2">Previuos</button>
+            <button className="btn btn-primary m-2">Next</button>
         </div>
         </div>
     </div>)

@@ -9,6 +9,7 @@ const ProductCard = (props) => {
             <div className="card-body">
                 <h4 className="card-heading">{props.fields.name}</h4>
                 <p className="card-text"> {props.fields.description}</p>
+                <p>{props.fields.unitPrice}</p>
                 <Link className="btn btn-primary" to={"/product/" + props.id}>Learn More</Link>
             </div>
         </div>
