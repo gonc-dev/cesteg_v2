@@ -68,6 +68,9 @@ export default function App() {
         <div class="container">
             <div class="row m-auto">
                 <div class="col-md-4">
+                <div class="row">
+                        <h4>Links</h4>
+                    </div>
                     <div class="row">
                         <a href="/products">Products</a>
                     </div>
@@ -78,7 +81,7 @@ export default function App() {
                         <a href="/news">News</a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 center-link">
                     <div class="row">
                         <a href="/case-studies">Case Studies</a>
                     </div>
@@ -86,7 +89,23 @@ export default function App() {
                         <a href="/about">About</a>
                     </div>
                     <div class="row">
-                        <a href="/contact-us">Contact Us</a>
+                        <a href="/contact-us">More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                <div class="row">
+                        <h4>Contact Us</h4>
+                    </div>
+                    <div class="row">
+                    <i class="fas fa-map-marker"></i>
+                    642 Good Hope Westgate Harare             
+                    </div>
+                    <div class="row">
+                    <a href="mailto: kashirigodknows@gmail.com"><i class="fas fa-envelope"></i>
+                                        kashirigodknows@gmail.com</a>
+                    </div>
+                    <div class="row">
+                    <a href="tel:+263774676871"><i class="fas fa-phone"></i>+263774676871</a>
                     </div>
                 </div>
             </div>

@@ -1,21 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ReactDOM from 'react-dom'
 import './App.css'
 import {useEffect} from 'react'
 import AOS from 'aos'
 import LatestPosts from './latest_posts'
+var Carousel = require('react-responsive-carousel').Carousel;
 
 const Home = (props) => {
+    useState()
     useEffect(() =>{
         AOS.init()
+
     }, [])
     return (
     <div className="main-div">
         <div className="parallax">
-
+            <div >
+                <div className="row">
+                    <div className="col-md-6"></div>
+                    <div className="col-md-6">
+                        <div class="wrap">
+                            <div class="car-text-one text-center">
+                                <h1 >Products</h1>
+                                <p >We have Various Products For Sale!</p>
+                                <button className="btn btn-primary"><a href="/products">Check It Out</a></button>   
+                            </div>
+                            <div class="car-text-two text-center">
+                                <h1 >Partners</h1>
+                                <p >We have over 20 partners with us!</p>
+                            </div>
+                            <div class="car-text-three text-center">
+                                <h1 >Services</h1>
+                                <p >We Provide Quality Services For Our Clients</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
         </div>
         <div className="container">
         <section id="hero">
-            <div className="row jumbotron">
+            <div className="row">
                 <div className="col-md-6 text-center" data-aos="fade-right" data-aos-duration="2000" >
                     <img src="/images/logo-transparent.png" width="100%"/>
                 </div>
@@ -46,7 +71,8 @@ const Home = (props) => {
                 <LatestPosts />
             </div>
         </section>
-        </div>        
+        </div>
+        <script></script>     
     </div>
     )
   }

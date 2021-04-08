@@ -4,10 +4,10 @@ import { Carousel } from 'react-responsive-carousel';
 import { useState} from 'react'
 
 const CaseStudies = (props) => {
-    const contentList = [
-        'This is somee case study',
-        'this is another',
-        'and yet another'
+    let contentList = [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas purus urna, mattis vitae consequat sit amet, accumsan non nibh. Phasellus eleifend efficitur ex, sit amet vulputate nisl convallis a. Sed.',
+        'Lorem ipsum dolor sit met, consectetur',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas purus urna, mattis vitae consequat sit amet, accumsan non nibh. Phasellus eleifend efficitur ex, sit amet vulputate nisl convallis a. Sed.',
     ]
     const [content, setContent] = useState(contentList[0])
     
@@ -22,20 +22,20 @@ const CaseStudies = (props) => {
                     setContent(contentList[index])
                 }}>
                 <div>
-                    <img src="images/Case_Study_1.jpeg" />
+                    <img src="images/case-study-1.jpg" />
                     <p className="legend">Legend 1</p>
                     <p>Some sort of case study</p>
                 </div>
                 <div>
-                    <img src="images/pipe.jpg" />
+                    <img src="images/case-study-2.jpg" />
                     <p className="legend">Legend 2</p>
                 </div>
                 <div>
-                    <img src="images/ngezi.jpeg" />
+                    <img src="images/case-study-3.jpg" />
                     <p className="legend">Legend 3</p>
                 </div>
                 <div>
-                    <img src="images/ht-cable.jpg" />
+                    <img src="images/case-study-4.jpg" />
                     <p className="legend">Legend 3</p>
                 </div>
             </Carousel>

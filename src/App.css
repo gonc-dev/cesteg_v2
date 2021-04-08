@@ -1,3 +1,24 @@
+body {
+  background: linear-gradient(125deg, #fff, #ee7e4a);
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.logo-header {
+  padding-top: 100px;
+}
+
 .App {
   text-align: center;
 }
@@ -196,3 +217,61 @@
 .carousel .slide{
   background-color: white!important;
 }
+
+.center-link {
+  margin-top: 28px;
+}
+
+i {
+  padding: 10px;
+}
+
+.car-text {
+  text-align: center;
+  color: #fff;
+  margin-top:100px;
+}
+
+.wrap
+  {
+    backdrop-filter: blur(10px);
+    position: absolute;
+    overflow: hidden;
+    height: 500px;
+}
+
+.car-text-one {
+  position: relative;
+  animation-name: car-text-one;
+  animation-duration: 2s;
+  animation-direction: normal;
+}
+
+@keyframes car-text-one {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+.car-text-two {
+  position: relative;
+  animation-name: car-text-two;
+  animation-duration: 4s;
+  animation-direction: normal;
+}
+
+@keyframes car-text-two {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+.car-text-three {
+  position: ;
+  animation-name: car-text-three;
+  animation-duration: 6s;
+  animation-direction: normal;
+}
+
+@keyframes car-text-three {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
