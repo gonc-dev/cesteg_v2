@@ -232,46 +232,62 @@ i {
   margin-top:100px;
 }
 
-.wrap
-  {
-    backdrop-filter: blur(10px);
-    position: absolute;
-    overflow: hidden;
+
+  /* Reset Animation For Carousel */
+
+  .wrap {
     height: 500px;
+    width: 500px;
+    position:relative;
+    overflow: hidden;
 }
 
-.car-text-one {
-  position: relative;
-  animation-name: car-text-one;
-  animation-duration: 2s;
-  animation-direction: normal;
+.cards-text {
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    position: absolute;
+    left: -200px;
+    top: 100px;
+    
 }
 
-@keyframes car-text-one {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
-
-.car-text-two {
-  position: relative;
-  animation-name: car-text-two;
-  animation-duration: 4s;
-  animation-direction: normal;
+.animate-in {
+    animation-duration: 3s;
+    animation-name: animate-in;
+    animation-timing-function: linear;
+    animation-direction: forwards;
+    animation-delay: 0s;
 }
 
-@keyframes car-text-two {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
-
-.car-text-three {
-  position: ;
-  animation-name: car-text-three;
-  animation-duration: 6s;
-  animation-direction: normal;
+.animate-out {
+    animation: animate-out 2s linear;
 }
 
-@keyframes car-text-three {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
+@keyframes animate-out {
+    from {
+        left: -100px;
+    }
+
+    to {
+        left: 600px;
+    }
+}
+
+@keyframes animate-in {
+    0% {
+        left: -200px;
+    }
+
+    25% {
+        left: 100px;
+    }
+
+    75% {
+        left: 100px;
+    }
+
+    100% {
+        left: 600px;
+    }
+}

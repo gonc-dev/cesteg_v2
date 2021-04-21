@@ -4,13 +4,25 @@ import './App.css'
 import {useEffect} from 'react'
 import AOS from 'aos'
 import LatestPosts from './latest_posts'
+
+function reset() {
+    Array.from(document.querySelectorAll('.cards-text')).forEach(el => {
+        console.log(el)
+        
+        el.classList.remove('animate-in')
+        setTimeout(() => el.classList.add('animate-in'), 50)
+    });
+    setTimeout(reset, 9000)
+}
+
+
 var Carousel = require('react-responsive-carousel').Carousel;
 
 const Home = (props) => {
-    useState()
+
     useEffect(() =>{
         AOS.init()
-
+        setTimeout(reset, 9000)
     }, [])
     return (
     <div className="main-div">
@@ -20,18 +32,18 @@ const Home = (props) => {
                     <div className="col-md-6"></div>
                     <div className="col-md-6">
                         <div class="wrap">
-                            <div class="car-text-one text-center">
-                                <h1 >Products</h1>
-                                <p >We have Various Products For Sale!</p>
+                            <div className="cards-text text-center animate-in" id="card-one">
+                                <h1>Products</h1>
+                                <p>We have Various Products For Sale!</p>
                                 <button className="btn btn-primary"><a href="/products">Check It Out</a></button>   
                             </div>
-                            <div class="car-text-two text-center">
-                                <h1 >Partners</h1>
-                                <p >We have over 20 partners with us!</p>
+                            <div className="cards-text text-center animate-in" id="card-two" style={{animationDelay: "3s"}}>
+                                <h1>Partners</h1>
+                                <p>We have over 20 partners with us!</p>
                             </div>
-                            <div class="car-text-three text-center">
-                                <h1 >Services</h1>
-                                <p >We Provide Quality Services For Our Clients</p>
+                            <div className="cards-text text-center animate-in" id="card-three" style={{animationDelay: "6s"}}>
+                                <h1>Services</h1>
+                                <p>We Provide Quality Services For Our Clients</p>
                             </div>
                         </div>  
                     </div>
@@ -72,7 +84,6 @@ const Home = (props) => {
             </div>
         </section>
         </div>
-        <script></script>     
     </div>
     )
   }
